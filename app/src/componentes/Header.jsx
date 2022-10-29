@@ -8,10 +8,10 @@ export default class Header extends Component {
                 <div className='navbar-container'>
 
                     <input id='menu' type='checkbox' className='menu' />
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
+                    <div className="hamburger-lines">
+                        <span className="line line1"></span>
+                        <span className="line line2"></span>
+                        <span className="line line3"></span>
                     </div>
                     <section className='HeaderLinks'>
                         <NavLink to='/' className='HeaderLink'>Home</NavLink>
