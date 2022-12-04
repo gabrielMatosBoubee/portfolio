@@ -20,7 +20,7 @@ function Works() {
         <div className="ok">
           {[data[position]].map((e) =>
             <div className="WorksCarousel" key={e.site}>
-              <img className="WorksImg" src={e.image} sizes='100vw' />
+              <img className="WorksImg" src={e.image} alt= {e.text} sizes='100vw' />
               <section className="WorksSection">
                 <p className="WorksText">{e.text}</p>
                 <button
