@@ -42,7 +42,7 @@ useEffect(() => {
 }, [text1, typing]);
 
   return (
-  <p className="blinking-cursor">{text1}</p>
+  <h2 className="blinking-cursor">I am a <strong style={{'color': 'red'}}>{text1}</strong></h2>
   );
 }
 

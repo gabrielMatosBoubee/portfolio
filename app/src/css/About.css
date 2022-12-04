@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.About {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-items: center;
+  top: 10vh;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.AboutImg {
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.AboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    font-family: bebas neue;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+    .About { 
+    flex-direction: column-reverse;
+    position: relative;
+    top: 0;
+    }
+}
+
+@media (max-width: 398px) {
+    .AboutImg {
+        width: 90vw;
+    }
+}
+

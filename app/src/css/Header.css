@@ -5,6 +5,9 @@
 }
 .Header {
     display: flex;
+    height: 10vh;
+    position: relative;
+    align-items: center;
     flex-direction: row-reverse;
     justify-content: space-around;
     background-color: azure;
@@ -60,6 +63,8 @@
         opacity: 0.90;
         padding: 50px;
         background: #fff;
+        top: 0;
+        justify-content: space-around;
         height: 100vh;
         min-width: 300px;
         max-width: 300px;

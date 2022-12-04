@@ -38,7 +38,7 @@ export default class Home extends Component {
             <div className='Home'>
                 <Header />
                 <main className='HomeMain'>
-                    <img src={imgGabriel} alt="A man with social wears" className="imgGabriel" />
+                    {/* <img src={imgGabriel} alt="A man with social wears" className="imgGabriel" /> */}
                     <div>
                     <section className='HomeTexts'>
                         <h2>Hi there, I'm Gabriel Boubee</h2>

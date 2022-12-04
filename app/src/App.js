@@ -1,8 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './componentes/Home';
+import Home from './pages/Home';
 import React from 'react';
+import About from './pages/About';
+import Works from './pages/Works';
 
 class App extends React.Component {
   render(){
@@ -11,9 +12,9 @@ class App extends React.Component {
     <>
       <BrowserRouter>
         <Route exact path='/' component={ Home } />
-        <Route path='/about' component={ Home } />
+        <Route path='/about' component={ About } />
         <Route path='/skills' component={ Home } />
-        <Route path='/works' component={ Home } />
+        <Route path='/works' component={ Works } />
         <Route path='/contact' component={ Home }/>
       </BrowserRouter>  
     </>

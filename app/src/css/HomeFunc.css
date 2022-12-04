@@ -1,0 +1,72 @@
+.HomeMain {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+}
+
+.HomeTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomeTexts h1 {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.text {
+    display: inline-flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.blinking-cursor {
+ margin-left: 5px ;
+}
+
+.blinking-cursor::after {
+    content: "|";
+    color: black;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink {
+    from,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+.HomeButton {
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    font-size: 1.5rem;
+}
+
+.HomeButton:hover {
+    color: white;
+    background-color: black;
+    transition: 1s color, 1s background ;
+}
+
+body {
+    background-color: gray;
+}
+
+@media (max-width: 664px) {
+    .HomeButton {
+        display: flex;
+        width: 80vw;
+    }
+}

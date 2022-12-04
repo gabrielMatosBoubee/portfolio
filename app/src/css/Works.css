@@ -1,0 +1,149 @@
+.WorksImg {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 30px;
+}
+
+.btnCarousel {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+.WorksMain {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 96vw;
+    justify-content: space-evenly;
+}
+
+.WorksDiv{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WorksCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110%;
+    flex-wrap: wrap;
+}
+
+.WorksSection {
+    width: 40vw;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.WorksText {
+    font-size: 1.5rem;
+}
+.WorksCarousels {
+    border: 0px;
+    border-radius: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1rem;
+    height: 60px;
+    font-size: 3.5rem;
+}
+
+.WorksButton {
+    border-radius: 8px;
+    border: 1px solid rgb(9, 9, 9);
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    font-size: 1.5rem;
+}
+
+.test {
+    margin: 1px;
+}
+
+@media (max-width: 850px) {
+    .WorksButton {
+       margin: 0.2rem;
+       width: 50vw;
+       height: 80px;
+    }
+
+    .WorksMain {
+        top: 0;
+    }
+
+    .WorksText { display: none;}
+    
+    .WorksCarousels {
+      position: absolute;
+      z-index: 1;
+      bottom: -50px;
+    }
+
+    #WorksRegress {
+        left: -10px;
+    }
+
+    #WorksAdvance {
+        right: -10px;
+    }
+
+    .WorksSection {
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        margin-top: 1rem;
+        width: 90%;
+    }
+
+    .WorksDiv {
+        top: 26px;
+    }
+
+    .WorksImg {
+        max-width: 95%;
+        max-height: 70%;
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+    }
+    .WorksCarousel {
+        width: 100%;
+        position: relative;
+        top: 5vh;
+        align-items: center;
+        justify-content: center;
+        height: 73vh;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    .WorksDiv {
+        top:16px
+    }
+
+    
+    .WorksSection {
+        flex-direction: column;
+    }
+    
+    .WorksButton {
+        width: 100%;
+    }
+
+    .WorksCarousel {
+        flex-direction: column;
+        width: 260px;
+        flex-wrap: wrap;
+    }
+}

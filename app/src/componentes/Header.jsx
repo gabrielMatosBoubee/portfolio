@@ -22,8 +22,6 @@ export default class Header extends Component {
                     </section>
                 </div>
                 <h3>Boubee</h3>
-                {/* <label htmlFor='menu'> */}
-                {/* </label > */}
             </header >
         )
     }
