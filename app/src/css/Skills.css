@@ -1,0 +1,23 @@
+.icon {
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+}
+
+.Skills {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 10vh;
+    justify-content: center;
+}
+
+.SkillsMain {
+ display: block;
+  width: 400px;
+  background-color: #dedede;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 10px;
+  border-radius: 10px;
+}
