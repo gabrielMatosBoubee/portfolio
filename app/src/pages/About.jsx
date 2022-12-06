@@ -11,7 +11,7 @@ function About () {
     <Header />
     <main className="About">
       <aside className="AboutText">
-    <h1 style={{ 'marginTop': '10px'}}>Whos am I?</h1>
+    <h1 style={{ 'marginTop': '10px'}}>Who am I?</h1>
     <p style={{ 'marginTop': '10px'}}>I am a person who wants challenges, the one who will undestand the client's disconfort
       and bring the solucion on codes! But now I'll tell you my history. I start to learn
       progamation because I love technology and learn every day, so I decide to enter on trybe.
