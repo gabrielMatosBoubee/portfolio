@@ -16,8 +16,8 @@
  display: block;
   width: 400px;
   background-color: #dedede;
-  padding-left: 50px;
-  padding-right: 50px;
+  text-align: center;
+  padding: 1vmax;
   margin: 10px;
   border-radius: 10px;
 }
