@@ -12,12 +12,16 @@
 
 .WorksMain {
     position: relative;
-    top: 10vh;
     display: flex;
     align-items: center;
-    height: 80vh;
-    width: 96vw;
     justify-content: space-evenly;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    width: 96vw;    
+    height: 90vh;
 }
 
 .WorksDiv{
@@ -32,49 +36,77 @@
 .WorksCarousel {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 110%;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
     flex-wrap: wrap;
 }
 
 .WorksSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
     width: 40vw;
     font-weight: 700;
     font-family: sans-serif;
 }
 
 .WorksText {
+    color: white;
+    text-align: center;
     font-size: 1.5rem;
 }
 .WorksCarousels {
     border: 0px;
     border-radius: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 1rem;
     height: 60px;
     font-size: 3.5rem;
 }
 
 .WorksButton {
     border-radius: 8px;
-    border: 1px solid rgb(9, 9, 9);
+    color: white;
+    background-color: rgba(16, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
     font-weight: bold;
     padding: 1rem;
     margin: 1rem;
     width: 300px;
+    height: 80px;
     font-size: 1.5rem;
+}
+
+.WorksButtons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .test {
     margin: 1px;
 }
 
-@media (max-width: 850px) {
+.paging-dot {
+    margin: 1px;
+    height: 15px;
+    width: 15px;
+}
+
+@media (max-width: 850px) and (min-width:350px) {
     .WorksButton {
        margin: 0.2rem;
        width: 50vw;
        height: 80px;
+    }
+
+    .WorksCarousel {
+        height: 90%;
+        position: relative;
+        top: 2vh;
     }
 
     .WorksMain {
@@ -83,57 +115,49 @@
 
     .WorksText { display: none;}
     
-    .WorksCarousels {
-      position: absolute;
-      z-index: 1;
-      bottom: -50px;
-    }
-
-    #WorksRegress {
-        left: -10px;
-    }
-
-    #WorksAdvance {
-        right: -10px;
-    }
 
     .WorksSection {
         display: flex;
-        /* flex-wrap: wrap; */
-        /* flex-direction: column; */
         margin-top: 1rem;
         width: 90%;
     }
 
-    .WorksDiv {
-        top: 26px;
-    }
-
     .WorksImg {
-        max-width: 95%;
-        max-height: 70%;
+        max-width: 90%;
+        max-height: 65%;
         width: auto;
         height: auto;
         border-radius: 30px;
     }
-    .WorksCarousel {
-        width: 100%;
-        position: relative;
-        top: 5vh;
-        align-items: center;
-        justify-content: center;
-        height: 73vh;
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 350px) {
+    .WorksImg {
+        max-width: 90%;
+        max-height: 65%;
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+    }
+
     .WorksDiv {
         top:16px
     }
-
+     
+    .WorksCarousel {
+        flex-direction: column;
+    }
+    
+    .WorksText { display: none;}
     
     .WorksSection {
+        display: flex;
+        margin-top: 1rem;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .WorksButtons{
         flex-direction: column;
     }
     
@@ -143,7 +167,6 @@
 
     .WorksCarousel {
         flex-direction: column;
-        width: 260px;
         flex-wrap: wrap;
     }
 }

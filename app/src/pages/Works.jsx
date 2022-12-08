@@ -3,6 +3,8 @@ import Header from "../componentes/Header";
 import data from "../Services/projects";
 import '../css/Works.css'
 import { useState } from "react";
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
+import Carousel from "nuka-carousel/lib/carousel";
 
 function Works() {
   const [position, setPosition] = useState(0)
@@ -10,19 +12,14 @@ function Works() {
     <>
       <Header />
       <main className="WorksMain">
-        <button
-          type="button"
-          id="WorksRegress"
-          className="WorksCarousels"
-          onClick={() => position === 0 ? setPosition(4) : setPosition(position - 1)}>
-          {'<'}
-        </button>
         <div className="ok">
-          {[data[position]].map((e) =>
+          <Carousel >
+          {data.map((e) =>
             <div className="WorksCarousel" key={e.site}>
               <img className="WorksImg" src={e.image} alt= {e.text} sizes='100vw' />
               <section className="WorksSection">
                 <p className="WorksText">{e.text}</p>
+                <div className="WorksButtons">
                 <button
                   type="button"
                   className="WorksButton"
@@ -33,29 +30,15 @@ function Works() {
                   type="button"
                   className="WorksButton"
                   onClick={() => window.open(e.repositor)}>
-                  Go to the repositor
+                  Go to the repository
                 </button>
+              </div>
               </section>
             </div>
           )
-          }
-          <div className="WorksDiv">
-            {data.map((e, index) => <button
-              key={index}
-              type='button'
-              className="btnCarousel"
-              style={position === index ? { 'background': 'black' } : { 'backgroundColor': 'white' }}
-              onClick={() => setPosition(index)}
-            ></button>)}
-          </div>
+        }
+        </Carousel>
         </div>
-        <button
-          type="button"
-          className="WorksCarousels"
-          id="WorksAdvance"
-          onClick={() => position === 4 ? setPosition(0) : setPosition(position + 1)}>
-          {'>'}
-        </button>
       </main>
     </>
   )

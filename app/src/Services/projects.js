@@ -5,7 +5,7 @@ import frontEndOnlineStore from '../Imagens/frontEndOnlineStore.png'
 const data = [
     { 
       image: triviaImg,
-      text: `This was my second project using redux. I improved my knowledge of the importance using objects and the component concepts.`,
+      text: `This was my second project using redux. I improved my knowledge on the importance of using objects and the component concepts.`,
       site: 'https://trivia-ochre.vercel.app/',
       repositor: 'https://github.com/gabrielMatosBoubee/trivia'
     },{ 
